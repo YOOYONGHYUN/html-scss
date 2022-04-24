@@ -1,0 +1,92 @@
+body {
+    margin: 0px;
+    padding: 10px;
+}
+
+@mixin border ($bot) {
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: $bot;
+}
+
+
+.list {
+    list-style: none;
+    padding-left: 0px;
+    
+    li {
+        padding: 20px;
+        @include border(0px solid black);
+    }
+
+    li:hover {
+        background-color: blue;
+        color:white;
+    }
+}
+
+/* 두번째 과제 */
+@mixin box_style ($bgcolor, $txcolor){
+    height: 50px;
+    background-color: $bgcolor;
+    color: $txcolor;
+}
+
+.alert {
+    margin-top: 50px;
+    
+    div {
+        align-items: center;
+        display: flex;
+        padding: 30px;
+        border-radius: 7px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin-top: 15px;
+    }
+
+    p:nth-child(1) {
+        margin-right: 5px;
+        font-weight: 600
+    }
+
+    .box_1 {
+        @include box_style(rgb(184, 219, 184), rgb(4, 97, 4));
+    }
+
+    .box_2 {
+        @include box_style(rgb(191, 224, 255), rgb(84, 84, 187));
+    }
+
+    .box_3 {
+        @include box_style(rgb(255, 235, 213), rgb(194, 129, 9));
+    }
+}
+
+/* 세번째 과제*/
+@mixin box {
+    background-color: rgb(223, 219, 219);
+    height: 50px;
+    border: 1px solid rgb(180, 177, 177);;
+}
+
+.container {
+        margin-top: 50px;
+}
+
+.col-6 {
+    @include box;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.col-4 {
+    display: flex;
+    align-items: center;
+    @include box;
+}

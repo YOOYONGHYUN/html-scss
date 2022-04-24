@@ -1,0 +1,77 @@
+@charset "UTF-8";
+body {
+  margin: 0px;
+  padding: 10px;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0px;
+}
+.list li {
+  padding: 20px;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 0px solid black;
+}
+.list li:hover {
+  background-color: blue;
+  color: white;
+}
+
+/* 두번째 과제 */
+.alert {
+  margin-top: 50px;
+}
+.alert div {
+  align-items: center;
+  display: flex;
+  padding: 30px;
+  border-radius: 7px;
+  margin-bottom: 20px;
+}
+.alert p {
+  margin-top: 15px;
+}
+.alert p:nth-child(1) {
+  margin-right: 5px;
+  font-weight: 600;
+}
+.alert .box_1 {
+  height: 50px;
+  background-color: rgb(184, 219, 184);
+  color: rgb(4, 97, 4);
+}
+.alert .box_2 {
+  height: 50px;
+  background-color: rgb(191, 224, 255);
+  color: rgb(84, 84, 187);
+}
+.alert .box_3 {
+  height: 50px;
+  background-color: rgb(255, 235, 213);
+  color: rgb(194, 129, 9);
+}
+
+/* 세번째 과제*/
+.container {
+  margin-top: 50px;
+}
+
+.col-6 {
+  background-color: rgb(223, 219, 219);
+  height: 50px;
+  border: 1px solid rgb(180, 177, 177);
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.col-4 {
+  display: flex;
+  align-items: center;
+  background-color: rgb(223, 219, 219);
+  height: 50px;
+  border: 1px solid rgb(180, 177, 177);
+}/*# sourceMappingURL=test.css.map */

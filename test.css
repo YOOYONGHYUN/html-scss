@@ -74,4 +74,123 @@ body {
   background-color: rgb(223, 219, 219);
   height: 50px;
   border: 1px solid rgb(180, 177, 177);
-}/*# sourceMappingURL=test.css.map */
+}
+
+@-webkit-keyframes 움찔움찔 {
+  0% {
+    transform: rotateZ(0deg);
+    /* 애니메이션이 0%만큼 동작시 */
+  }
+  30% {
+    transform: rotateZ(-10deg);
+    /* 애니메이션이 50%만큼 동작시 */
+  }
+  70% {
+    transform: rotateZ(10deg);
+    /* 애니메이션이 100%만큼 동작시 */
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+
+@keyframes 움찔움찔 {
+  0% {
+    transform: rotateZ(0deg);
+    /* 애니메이션이 0%만큼 동작시 */
+  }
+  30% {
+    transform: rotateZ(-10deg);
+    /* 애니메이션이 50%만큼 동작시 */
+  }
+  70% {
+    transform: rotateZ(10deg);
+    /* 애니메이션이 100%만큼 동작시 */
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+button {
+  height: 80px;
+  width: 100px;
+  color: white;
+  margin-top: 100px;
+  background-color: rgb(145, 241, 241);
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  -webkit-animation-name: 움찔움찔;
+          animation-name: 움찔움찔;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+
+@-webkit-keyframes 플러스 {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(45deg) scale(1.5);
+  }
+}
+
+@keyframes 플러스 {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(45deg) scale(1.5);
+  }
+}
+.plus {
+  width: 100px;
+  font-size: 100px;
+}
+
+.plus:hover {
+  -webkit-animation-name: 플러스;
+          animation-name: 플러스;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.black {
+  padding: 50px;
+  margin-left: -160px;
+  margin-top: 100px;
+  background-color: black;
+  width: 250px;
+  height: 300px;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  transition: all 1s;
+}
+
+.black span {
+  margin-bottom: 20px;
+}
+
+.black span:first-child {
+  font-weight: 600;
+  margin-left: 130px;
+}
+
+.black:hover {
+  margin-left: -10px;
+  text-align: center;
+}
+
+@-webkit-keyframes 블랙 {}
+
+@keyframes 블랙 {}/*# sourceMappingURL=test.css.map */
